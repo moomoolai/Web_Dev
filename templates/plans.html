@@ -1,0 +1,20 @@
+<div class="border-bottom row" style = 'margin-bottom: 24px;'>
+    <div class="col-9">
+        <h4 style ="margin-bottom: 8px;"> 
+            <b> Plan Type: </b> {{plan['planName']}}
+        </h4>
+
+        <p> <b> Price Per Month:</b> {{plan['pricePerMonth']}} </p>
+
+        {% if 'benefits' in plan%}
+
+            <p> <b> Benefits:</b> {{plan['benefits']}} </p>
+
+        {% endif %}
+    </div>
+
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-info">Info</button>
+    </div>
+
+</div>
